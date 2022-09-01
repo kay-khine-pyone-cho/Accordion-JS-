@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+}
+.accordion {
+  width: 100%;
+}
+.acctitle {
+  background-color: #777;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px;
+  margin: 0;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+.acctitle:hover,
+.active {
+  background-color: steelblue;
+}
+.acctitle:after {
+  content: "\f067";
+  font-family: "Font Awesome 5 Free";
+
+  /* position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%); */
+  float: right;
+}
+.acccontent {
+  background-color: #f4f4f4;
+  text-align: justify;
+  text-indent: 50px;
+  font-size: 14px;
+
+  padding: 0 20px;
+  height: 0;
+  overflow: hidden;
+
+  transition :height .3s ease-in-out;
+}
+.active:after{
+    content: "\f068";{
+
+}
